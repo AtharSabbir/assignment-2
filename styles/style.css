@@ -1,4 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap");
+
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=Fleur+De+Leah&display=swap');
 /* default styles */
 * {
   margin: 0;
@@ -14,20 +16,20 @@ body {
   align-items: center;
   margin-bottom: 100px;
 }
-.display-flex{
+.display-flex {
   display: flex;
   justify-content: space-between;
 }
-.btn-primary{
+.btn-primary {
   border: none;
   background-color: rgb(230, 83, 60);
   border-radius: 3rem;
   color: white;
   padding: 0.25rem 0.75rem;
   font-size: 1rem;
-  font-weight: 600;   
+  font-weight: 600;
 }
-.btn-1{
+.btn-1 {
   border: none;
   background-color: rgb(230, 83, 60);
   border-radius: 3rem;
@@ -38,7 +40,7 @@ body {
   margin-right: 2rem;
   margin-top: 3rem;
 }
-.btn-2{
+.btn-2 {
   background-color: transparent;
   border: 2px solid white;
   border-radius: 3rem;
@@ -48,18 +50,18 @@ body {
   font-weight: 600;
   margin-top: 3rem;
 }
-.title{
+.title {
   font-size: 4rem;
   font-weight: 900;
   color: white;
 }
-.s-title{
+.s-title {
   font-size: 1rem;
   font-weight: 500;
   color: white;
   text-align: center;
 }
-.semi-white{
+.semi-white {
   color: rgba(255, 255, 255, 0.5);
 }
 
@@ -67,16 +69,8 @@ body {
 
 /* nav-styles */
 header {
-  background: linear-gradient(
-    180deg,
-    rgb(0, 0, 0),
-    rgba(119, 119, 119, 0) 100%
-  ),
-  linear-gradient(
-    0deg,
-    rgb(0, 0, 0),
-    rgba(119, 119, 119, 0) 100%
-  );
+  background: linear-gradient(180deg, rgb(0, 0, 0), rgba(119, 119, 119, 0) 100%),
+    linear-gradient(0deg, rgb(0, 0, 0), rgba(119, 119, 119, 0) 100%);
   border: 1px solid black;
 }
 .brand {
@@ -87,7 +81,7 @@ header {
   margin-top: 70px;
 }
 
-.nav-items{
+.nav-items {
   margin-top: 70px;
   border: 1px solid rgb(185, 185, 185);
   border-radius: 3rem;
@@ -96,44 +90,42 @@ header {
   height: 2rem;
   align-items: center;
   color: white;
-    
 }
-.nev-hamburger-menu{
+.nev-hamburger-menu {
   display: none;
 }
 
-
-
 /* banner styles */
-.banner{
+.banner {
   width: 70%;
   align-items: center;
 }
-.banner-title{
+.banner-title {
   color: white;
   font-weight: 900;
   font-size: 6.5rem;
   margin-bottom: 3rem;
 }
-#shape{
-  font-family: "Dancing Script", cursive;
+#shape {
+  font-family: "Fleur De Leah", cursive;
   font-style: italic;
   font-weight: 100;
+  margin-right: 5px;
 }
-.banner-text{
+.banner-text {
   height: 30rem;
   width: 50%;
 }
-.banner-text p{
+.banner-text p {
   font-size: 1rem;
   font-weight: 400;
 }
 
-.banner-image img{
+.banner-image img {
   width: 100%;
   position: relative;
 }
-.bage-500{
+.bage-500 {
   position: absolute;
   background-color: rgba(255, 255, 255, 0.1);
   backdrop-filter: blur(20px);
@@ -143,9 +135,8 @@ header {
   color: white;
   margin-left: -8rem;
   margin-top: 8rem;
-  
 }
-.bage-350{
+.bage-350 {
   position: absolute;
   background-color: rgba(255, 255, 255, 0.1);
   backdrop-filter: blur(20px);
@@ -157,107 +148,165 @@ header {
   margin-left: -28rem;
 }
 
-.bage-year{
+.bage-year {
   font-size: 3rem;
   font-weight: 1000;
-
 }
 
 /* habit section style */
 
-main{
+main {
   background-color: black;
 }
 .habits {
   text-align: center;
   margin-bottom: 2rem;
 }
-.habits-title{
+.habits-title {
   margin-bottom: 3rem;
 }
-.img-and-text{
+.img-and-text {
   margin: 0 auto;
 }
-.img-and-text .image{
-  
+.img-and-text .image {
 }
-.image img{
+.image img {
   border-radius: 50%;
   margin-left: 4rem;
 }
-.img-and-text h3{
+.img-and-text h3 {
   margin-top: 10px;
   color: white;
   font-size: 1rem;
   font-weight: 500;
   text-align: center;
 }
-.img-and-text p{
+.img-and-text p {
   color: rgba(255, 255, 255, 0.5);
   width: 60%;
   margin: 10px auto;
 }
+/* run-extra- style*/
+.run-extra-container {
+  border-radius: 18px;
+  background: rgb(34, 34, 34);
+  backdrop-filter: blur(4px);
+  color: (34, 34, 34);
+  padding: 50px;
+  display: flex;
+}
 
+.run-extra-content{
+  width: 50%;
+}
+.run-extra-content p{
+  margin-top: 2rem;
+  line-height: 2rem;
+  word-spacing: 3px;
+}
+.run-extra-content button{
+  width: 18rem;
+  height: 5rem;
+  font-size: 2rem;
+}
 
+.run-extra-image{
+  width: 50%;
+}
+.run-extra-image img{
+  margin-left: 15.5rem;
+  width: 60%;
+  border-radius: 2rem;
+}
 
 /* media query for small device */
-@media screen and (max-width:576px) {
- /* nav style for mobile */
-  .nev-hamburger-menu{
+@media screen and (max-width: 576px) {
+  /* nav style for mobile */
+  .nev-hamburger-menu {
     display: block;
     font-size: 2rem;
     color: white;
   }
-  .nav-items{
+  .nav-items {
     display: none;
   }
   .brand {
     margin-top: 0px;
   }
   /* banner style for mobile */
-.banner{
-  flex-direction: column;
-  margin-bottom: 0;
-}
-.banner-text{
-  width: 100%;
-  margin-right: 1rem;
-  
-}
-.banner-title{
-  font-size: 3rem;
-}
+  .banner {
+    flex-direction: column;
+    margin-bottom: 0;
+  }
+  .banner-text {
+    width: 100%;
+    margin-right: 1rem;
+  }
+  .banner-title {
+    font-size: 3rem;
+  }
 
-.bage-350{
-  margin-left: -20rem;
-  margin-top: 20rem;
-}
-.bage-500{
-  margin-top: 3rem;
-}
-.btn-container{
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-}
-.btn-1, .btn-2{
-  padding: 0;
-  font-size: 1rem;
-  font-weight: 600;
-  margin-right: 2rem;
-  margin-top: 3rem;
-  width: 10rem;
-  height: 3rem;
-}
-/* habits section style for mobile*/
-.habits{
-  flex-direction: column;
-}
-.img-and-text{
-  flex-direction: column;
-}
-.habait-img-container{
-  flex-direction: column;
-}
+  .bage-350 {
+    margin-left: -20rem;
+    margin-top: 20rem;
+  }
+  .bage-500 {
+    margin-top: 3rem;
+  }
+  .btn-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+  .btn-1,
+  .btn-2 {
+    padding: 0;
+    font-size: 1rem;
+    font-weight: 600;
+    margin-right: 2rem;
+    margin-top: 3rem;
+    width: 10rem;
+    height: 3rem;
+  }
+  /* habits section style for mobile*/
+  .habits {
+    flex-direction: column;
+  }
+  .img-and-text {
+    flex-direction: column;
+  }
+  .habait-img-container {
+    flex-direction: column;
+  }
+
+  /* run extra styles for mobile */
+  .run-extra-container{
+    flex-direction: column;
+    padding: 1rem;
+  }
+  .run-extra-content{
+    padding: 0px 1rem;
+    width: 300px;
+  }
+
+
+  .run-extra-content h1{
+    font-size: 2rem;
+    margin: 0;
+  }
+
+  .run-extra-content button{
+    margin-top: 2rem;
+    margin-left: -0.5rem;
+    font-size: 2rem;
+  }
+
+
+  .run-extra-image img{
+    margin-left: -4.5rem;
+    width: 17rem;
+    border-radius: 0.5rem;
+    margin-top: 2rem;
+  }
+
 
 }
-
