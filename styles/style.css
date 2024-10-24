@@ -219,6 +219,63 @@ main {
   border-radius: 2rem;
 }
 
+/* Team section styles */
+.team-section h1{
+  width: 70%;
+  text-align: center;
+  margin: 0 auto;
+  margin-bottom: 3rem;
+}
+.team-section> p{
+  width: 70%;
+  text-align: center;
+  margin: 0 auto;
+  margin-bottom: 3rem;
+}
+
+.grid-image{
+  background-color: #1A1A1A;
+  backdrop-filter: blur(1rem);
+  padding: 2.5rem;
+  border-radius: 1.5rem;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2rem;
+}
+
+.team-mamber{
+  /* overflow: hidden; */
+  text-align: center;
+  
+}
+.team-mamber img{
+  width: 100%;
+  height: 27rem;
+  border-radius: 1rem;
+  object-fit: cover;
+}
+.wrap-image{
+  /* border: 1px solid gold; */
+  position: relative;
+}
+.image-info{
+  position: absolute;
+  width: 100%;
+  text-align: left;
+  bottom: 1rem;
+  left: 1.5rem;
+}
+.image-info h3{
+  color: white;
+  font-size: 2rem;
+  font-weight: 900;
+}
+
+
+
+
+
+
 /* media query for small device */
 @media screen and (max-width: 576px) {
   /* nav style for mobile */
@@ -307,6 +364,26 @@ main {
     border-radius: 0.5rem;
     margin-top: 2rem;
   }
+/* our team style for mobile */
+.grid-image{
+  grid-template-columns: repeat(1, 1fr);
+}
+.team-section> h1{
+  font-size: 2rem;
+  width: 100%;
+}
+.team-section> p{
+  width: 100%;
+}
+
+.team-mamber img{
+  height: 13rem;
+}
+.image-info h3{
+  font-size: 1.5rem;
+  font-weight: 900;
+}
+
 
 
 }
