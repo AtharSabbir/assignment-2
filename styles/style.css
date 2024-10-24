@@ -220,6 +220,11 @@ main {
 }
 
 /* Team section styles */
+.team-section{
+  margin-bottom: 0;
+  padding-bottom: 6rem;
+}
+
 .team-section h1{
   width: 70%;
   text-align: center;
@@ -270,9 +275,41 @@ main {
   font-size: 2rem;
   font-weight: 900;
 }
+/* Footer related styles */
+.footer-container{
+  width: 100%;
+  height: 20rem;
+  background-color: #222222;
+}
 
+.footer-content{
+  width: 70%;
+  display: flex;
+  margin: 0 auto;
+  align-items: center;
+  justify-content: center;
 
-
+}
+.footer-left{
+  width: 50%;
+  text-align: start;
+}
+.footer-right{
+  width: 50%;
+  display: flex;
+  gap: 8rem;
+  align-items: center;
+  justify-content: center;
+  margin-top: 6rem;
+}
+.get-started-1 h3{
+  color: white;
+  margin-bottom: 2rem;
+}
+.get-started-1 p{
+  color: rgba(255, 255, 255, 0.5);
+  margin-bottom: 1rem;
+}
 
 
 
@@ -383,7 +420,34 @@ main {
   font-size: 1.5rem;
   font-weight: 900;
 }
+/* Footer styles for Mobile */
+.footer-container{
+  height: auto;
+}
 
+.footer-content{
+  flex-direction: column;
+}
+.footer-left{
+  width: 100%;
+  margin-top: 3rem;
+}
+.footer-left .brand{
+  margin-bottom: 1rem;
+}
 
+.footer-right{
+  flex-direction: column;
+}
+.footer-right{
+  width: 100%;
+}
+.get-started-1 h3{
+  font-size: 2rem;
+}
+
+.get-started-1{
+  margin-left: -6rem;
+}
 
 }
